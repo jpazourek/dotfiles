@@ -1,0 +1,11 @@
+@import "config.rasi"
+
+inputbar {
+  enabled: false;
+}
+
+listview {
+  cycle: false;
+}
+
+

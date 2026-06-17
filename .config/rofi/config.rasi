@@ -1,0 +1,136 @@
+configuration {
+  modes: "drun";
+
+  show-icons: false;
+
+  drun-display-format: "{name}";
+  display-drun: " ";
+
+  hover-select: false;
+  me-select-entry: "";
+  me-accept-entry: "MousePrimary";
+
+  kb-accept-entry: "Control+m,Return";
+  kb-row-up: "Up,Control+k";
+  kb-row-down: "Down,Control+j";
+  kb-remove-to-eol: "";
+
+  tokenize: false;
+  case-sensitive: false;
+  sort: true;
+  sorting-method: "fzf";
+  matching: "fuzzy";
+}
+
+* {
+  font: "JetBrainsMono Nerd Font";
+
+  background-color: transparent;
+  separatorcolor: transparent;
+
+  margin: 0px;
+  padding: 0px;
+  spacing: 0px;
+
+  bg-dark-transparent: #2a2a2acc;
+  bg-gray-transparent: #3d3d3d80;
+  bg-main: #fb6389;
+  text-color-1: #ffffff;
+  text-color-2: #1e9de5;
+  text-color-3: #4d4d4d;
+}
+
+window {
+  location: center;
+  width: 720px;
+
+  border: 3px;
+  border-radius: 24px;
+  border-color: @bg-main;
+
+  background-color: @bg-dark-transparent; 
+}
+
+mainbox {
+  padding: 16px;
+
+  border-radius: 24px;
+}
+
+inputbar {
+  background-color: @bg-dark-transparent;
+  border-color: @bg-main;
+  border: 2px;
+  border-radius: 16px;
+
+  padding: 10px 20px;
+  spacing: 8px;
+
+  children: [ prompt, entry, num-filtered-rows, textbox-slash, num-rows ];
+}
+
+num-filtered-rows, num-rows {
+  text-color: @text-color-1;
+}
+
+textbox-slash {
+  expand: false;
+  str: " / ";
+  text-color: @text-color-1;
+  margin: 0px 4px;
+}
+
+prompt {
+  text-color: @text-color-2;
+}
+
+entry {
+  placeholder: "Search...";
+  placeholder-color:  @text-color-3;
+  text-color: @text-color-1;
+}
+
+message {
+  margin: 12px 0 0 0;
+
+  border-radius: 16px;
+  border-color: @bg-gray-transparent;
+
+  background-color: @bg-gray-transparent;
+}
+
+textbox {
+  padding: 10px 20px;
+  text-color: @text-color-1;
+}
+
+listview {
+  background-color: transparent;
+
+  margin: 12px 0 0 0;
+
+  lines: 8;
+  columns: 1;
+
+  scrollbar: false;
+}
+
+element {
+  padding: 10px 20px;
+
+  border-radius: 16px;
+}
+
+element normal.normal, element alternate.normal{
+  background-color: transparent;
+  text-color: @text-color-1;
+}
+
+element selected.normal, element selected.active {
+  background-color: @bg-main;
+  text-color: @text-color-1;
+}
+
+element-text {
+  text-color: @text-color-1;
+}
