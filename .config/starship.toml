@@ -1,0 +1,46 @@
+add_newline = false
+format = """
+$username$hostname$directory$git_branch$git_status$character 
+"""
+
+[character]
+success_symbol = " [❯](green bold)"
+error_symbol = " [❯](green bold)"
+
+[username]
+style_user = 'green bold'
+style_root = 'red bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+trim_at = "-"
+format = '[@$hostname](bold green) '
+disabled = false
+
+[directory]
+truncation_length = 0
+format = '[$path]($style)'
+style = 'cyan bold'
+
+[git_branch]
+symbol = ''
+format = ' [$symbol$branch]($style)'
+style = 'bold red'
+
+[git_status]
+format = '( [$all_status$ahead_behind]($style))'
+style = 'bold green'
+conflicted = '[ confliced=${count}](red) '
+up_to_date = '[󰘽 up-to-date](green) '
+untracked = '[󰋗 untracked=${count}](red) '
+ahead = ' ahead=${count}'
+diverged = ' ahead=${ahead_count}  behind=${behind_count}'
+behind = ' behind=${count}'
+stashed = '[ stashed=${count}](green) '
+modified = '[󰛿 modified=${count}](yellow) '
+staged = '[󰐗 staged=${count}](green) '
+renamed = '[󱍸 renamed=${count}](yellow) '
+deleted = '[󰍶 deleted=${count}](red) '
