@@ -1,0 +1,51 @@
+#:schema https://yazi-rs.github.io/schemas/yazi.json
+
+[mgr]
+sort_by = "natural"
+
+[opener]
+edit = [
+  { run = "nvim %s", desc = "Neovim", for = "linux", block = true },
+]
+play_media = [
+  { run = "mpv %s1", desc = "mpv", for = "linux", orphan = true },
+]
+open_image = [
+  { run = "nsxiv %s", desc = "Gwenview", for = "linux", orphan = true },
+]
+default = [
+  { run = "xdg-open %s1", desc = "Default", for = "linux", orphan = true },
+]
+terminal = [
+  { run = 'kitty --working-directory "%d1"', desc = "kitty", for = "linux", orphan = true },
+]
+extract = [
+  { run = "ya pub extract --list %s", desc = "Extract" },
+]
+download = [
+  { run = "ya emit download --open %S", desc = "Download and open" },
+  { run = "ya emit download %S", desc = "Download" },
+]
+
+[open]
+rules = [
+  { url = "*/", use = ["default"] },
+  { mime = "text/*", use = ["edit", "terminal", "default"] },
+  { mime = "image/*", use = ["open_image", "terminal", "default"] },
+  { mime = "{audio,video}/*", use = ["play_media", "terminal", "default"] },
+  { mime = "application/{json,ndjson,javascript,wine-extension-ini}", use = [
+    "edit",
+    "terminal",
+    "default"
+  ] },
+  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", use = [
+    "extract",
+    "terminal"
+  ] },
+  { mime = "inode/empty", use = ["edit", "terminal", "default"] },
+  { mime = "vfs/{absent,stale}", use = "download" },
+  { url = "*", use = ["default", "terminal"] },
+]
+
+[input]
+cursor_blink = false
