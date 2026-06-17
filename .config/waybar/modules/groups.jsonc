@@ -8,7 +8,7 @@
     "modules": [
       "custom/distro",
       "custom/terminal",
-      "custom/code",
+      "custom/libreoffice",
       "custom/obsidian",
       "custom/files",
       "custom/browser",

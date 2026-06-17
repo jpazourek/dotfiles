@@ -9,9 +9,9 @@
     "on-click": "kitty",
     "tooltip": false
   },
-  "custom/code": {
-    "format": "󰨞",
-    "on-click": "code",
+  "custom/libreoffice": {
+    "format": "",
+    "on-click": "libreoffice",
     "tooltip": false
   },
   "custom/obsidian": {
@@ -21,7 +21,7 @@
   },
   "custom/files": {
     "format": "",
-    "on-click": "dolphin",
+    "on-click": "kitty -e yazi",
     "tooltip": false
   },
   "custom/browser": {

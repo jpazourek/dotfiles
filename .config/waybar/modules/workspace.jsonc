@@ -19,7 +19,12 @@
       "nm-connection-editor": "󰐻",
       "kodi": "󰌔",
       "Proton Mail": "󰇮",
-      "Proton Pass": ""
+      "Proton Pass": "",
+      "libreoffice": "",
+      "pgmodeler": "",
+      "pgadmin4": "",
+      "qbittorrent": "",
+      "mpv": ""
     },
     "format-icons": {
       "active": "",
