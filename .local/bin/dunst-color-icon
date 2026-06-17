@@ -1,0 +1,37 @@
+#!/bin/bash
+
+cache_dir="$HOME/.cache/icons/dunst"
+base_icon="$HOME/.local/share/icons/dunst/${1}.svg"
+
+if [ ! -f "$base_icon" ]; then
+  echo $base_icon "is not a valid icon"
+  exit 1
+fi
+
+mkdir -p $cache_dir
+
+case "$2" in
+  low)
+    color="1e9ee6"
+    ;;
+  normal)
+    color="be83ec"
+    ;;
+  critical)
+    color="fb6389"
+    ;;
+  *)
+    echo "Usage:" $0 "icon_name" "low|normal|critical"
+    exit 1
+    ;;
+esac
+
+tmp_icon="${cache_dir}/${1}_${color}.svg"
+
+if [ ! -f "$tmp_icon" ]; then
+  sed "s/000000/$color/g" "$base_icon" > "$tmp_icon"
+fi
+
+echo "$tmp_icon"
+
+

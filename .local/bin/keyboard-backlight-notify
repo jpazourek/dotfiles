@@ -1,0 +1,22 @@
+#!/bin/bash
+
+case "$1" in
+  up)
+    brightnessctl --device='tpacpi::kbd_backlight' set 1+
+    icon="$($HOME/.local/bin/dunst-color-icon backlight_high low)"
+    ;;
+  down)
+    brightnessctl --device='tpacpi::kbd_backlight' set 1-
+    icon="$($HOME/.local/bin/dunst-color-icon backlight_low low)"
+    ;;
+  *)
+    echo "Usage: $0 up|down"
+    exit 1
+    ;;
+esac
+
+backlight="$(brightnessctl -m --device='tpacpi::kbd_backlight' | awk -F, '{print substr($4, 0, length($4) - 1)}')"
+
+dunstify -a backlight_keyboard -r 9002 -u low -I "$icon" -h int:value:"$backlight" "Backlight" "${backlight}%"
+
+  

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+muted="$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q MUTED && echo "muted" || echo "unmuted")"
+
+if [ "$muted" = "muted" ]; then
+  icon="$($HOME/.local/bin/dunst-color-icon volume_off normal)"
+  dunstify -a audio_muted -u normal -I "$icon" "Audio" "Muted"
+else
+  icon="$($HOME/.local/bin/dunst-color-icon volume_up normal)"
+  dunstify -a audio_unmuted -u normal -I "$icon" "Audio" "Unmuted"
+fi
