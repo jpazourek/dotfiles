@@ -1,0 +1,132 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "arch",
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 10
+    },
+    "color": {
+      "1": "#1e9ee6",
+      "2": "#8d3ef0"
+    }
+  },
+  "display": {
+    "separator": "",
+    "key": {
+      "width": 16,
+      "type": "string"
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "╭──────────────────────────────────────────────╮"
+    },
+    {
+      "type": "os",
+      "key": "  󰣇 OS        ",
+      "format": "{pretty-name} {arch}",
+      "keyColor": "#fb6389"
+    },
+    {
+      "type": "kernel",
+      "key": "   Kernel    ",
+      "format": "{sysname} {Release}",
+      "keyColor": "#fc88a5"
+    },
+    {
+      "type": "terminal",
+      "key": "  󰞷 Terminal  ",
+      "format": "{pretty-name} {version}",
+      "keyColor": "#1e9ee6"
+    },
+    {
+      "type": "shell",
+      "key": "   Shell     ",
+      "format": "{pretty-name} {version}",
+      "keyColor": "#be83ec"
+    },
+    {
+      "type": "packages",
+      "key": "  󰏖 Packages  ",
+      "format": "{pacman} (pacman)",
+      "keyColor": "#8d3ef0"
+    },
+    {
+      "type": "wm",
+      "key": "  󱂬 WM        ",
+      "format": "{pretty-name} {version} ({protocol-name})",
+      "keyColor": "#fb6389"
+    },
+    {
+      "type": "cpu",
+      "key": "   CPU       ",
+      "format": "{name}",
+      "keyColor": "#fc88a5"
+    },
+    {
+      "type": "gpu",
+      "key": "  󰢮 GPU       ",
+      "format": "{name}",
+      "keyColor": "#1e9ee6"
+    },
+    {
+      "type": "display",
+      "key": "  󰹑 Display   ",
+      "format": "{name} - {width}x{height} @ {refresh-rate} Hz",
+      "keyColor": "#be83ec"
+    },
+    {
+      "type": "custom",
+      "format": "╰──────────────────────────────────────────────╯"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "╭──────────────────────────────────────────────╮"
+    },
+    {
+      "type": "datetime",
+      "key": "  󰅐 Time      ",
+      "format": "{hour-pretty}:{minute-pretty}:{second-pretty} {day-in-month}.{month-pretty}.{year}",
+      "keyColor": "#8d3ef0"
+    },
+    {
+      "type": "uptime",
+      "key": "  󰅐 Uptime    ",
+      "format": "{hours} hours, {minutes} mins",
+      "keyColor": "#fb6389"
+    },
+    {
+      "type": "command",
+      "key": "   OS Age    ",
+      "text": "birthd=$(stat -c %W /); echo $(( ( $(date +%s) - birthd ) / 86400 )) days",
+      "keyColor": "#fc88a5"
+    },
+    {
+      "type": "memory",
+      "key": "   Memory    ",
+      "format": "{used} / {total} ({percentage})",
+      "keyColor": "#1e9ee6"
+    },
+    {
+      "type": "swap",
+      "key": "   Swap      ",
+      "format": "{used} / {total} ({percentage})",
+      "keyColor": "#be83ec"
+    },
+    {
+      "type": "disk",
+      "key": "   Disk      ",
+      "format": "{size-used} / {size-total} ({size-percentage})",
+      "keyColor": "#8d3ef0"
+    },
+    {
+      "type": "custom",
+      "format": "╰──────────────────────────────────────────────╯"
+    }
+  ]
+}
