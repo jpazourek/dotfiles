@@ -1,0 +1,59 @@
+#idle_inhibitor,
+#power-profiles-daemon,
+#battery,
+#audio,
+#connections-laptop,
+#system,
+#connections-desktop,
+#storage,
+#clock {
+  margin: 4px 5px;
+  background-color: #1b2023;
+  border-radius: 20px;
+  color: #cac1db;
+}
+
+#audio,
+#system,
+#storage {
+  padding: 6px 6px;
+}
+
+#disk,
+#memory,
+#cpu,
+#temperature {
+  margin-right: 2px;
+  padding: 0 8px;
+}
+
+#idle_inhibitor,
+#power-profiles-daemon {
+  padding: 6px 15px 6px 10px;
+}
+
+#battery {
+  padding: 6px 10px;
+}
+
+#clock {
+  padding: 6px 10px 6px 16px;
+}
+
+#connections-desktop,
+#connections-laptop {
+  padding: 6px 8px;
+}
+
+#bluetooth {
+  padding: 0 6px 0 10px;
+}
+
+#network.ethernet,
+#network.wlan {
+  padding: 0 10px 0 4px;
+}
+
+#network.protonvpn {
+  padding: 0 10px 0 10px;
+}

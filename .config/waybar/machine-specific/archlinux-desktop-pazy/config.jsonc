@@ -1,0 +1,16 @@
+{
+  "output": "DP-1",
+  "modules-left": [
+    "group/distro-group",
+    "group/storage",
+    "group/system"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "group/audio",
+    "group/connections-desktop",
+    "clock"
+  ]
+}

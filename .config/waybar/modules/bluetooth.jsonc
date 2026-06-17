@@ -1,0 +1,15 @@
+{
+  "bluetooth": {
+    "controller": "archlinux-thinkpad-pazy",
+    "format": "󰂯",
+    "format-connected": "󰂱",
+    "format-disabled": "󰂲",
+    "tooltip-format": "{controller_alias} {status}",
+    "tooltip-format-on": "No devices are connected",
+    "tooltip-format-connected": "󰐻  {num_connections} Connected:\n{device_enumerate}",
+    "tooltip-format-enumerate-connected-battery": "󰂱  {device_alias} (󰠠  {device_battery_percentage}%)",
+    "tooltip-format-disabled": "Bluetooth is OFF",
+    "on-click": "blueman-manager",
+    "on-click-right": "rfkill toggle bluetooth"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "network#ethernet": {
+    "interval": 15,
+    "interface": "enp*",
+    "format-ethernet": "",
+    "format-disconnected": "",
+    "format-disabled": "",
+    "tooltip-format-ethernet": "󰈀  {ifname}\n󰩟  {ipaddr}\n  {netmask}",
+    "on-click": "nm-connection-editor"
+  },
+  "network#wlan": {
+    "interval": 15,
+    "interface": "wlp*",
+    "format-wifi": "{icon}",
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
+    "format-disconnected": "",
+    "format-disabled": "",
+    "tooltip-format-wifi": "󰈀  {ifname}\n󱄙  {essid} ({signalStrength}%)\n󰐻  {frequency}GHz\n󰩟  {ipaddr}\n  {netmask}",
+    "on-click": "nm-connection-editor"
+  },
+  "network#protonvpn": {
+    "interval": 15,
+    "interface": "proton*",
+    "format-ethernet": "󰖂",
+    "format-disconnected": "",
+    "format-disabled": "",
+    "tooltip-format-ethernet": "󰈀  {ifname}\n󰩟  {ipaddr}\n  {netmask}",
+    "on-click": "nm-connection-editor"
+  }
+}

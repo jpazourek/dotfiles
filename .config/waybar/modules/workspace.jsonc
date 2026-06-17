@@ -1,0 +1,33 @@
+{
+  "hyprland/workspaces": {
+    "format": "{id}|{icon} {windows}",
+    "on-click": "activate",
+    "all-outputs": false,
+    "move-to-monitor": true,
+    "persistent-workspaces": {
+      "*": 12
+    },
+    "window-rewrite-default": "",
+    "window-rewrite": {
+      "kitty": "󰆍",
+      "firefox": "",
+      "code": "󰨞",
+      "obsidian": "󰹕",
+      "vesktop": "",
+      "dolphin": "",
+      "pavucontrol": "󱕂",
+      "nm-connection-editor": "󰐻",
+      "kodi": "󰌔",
+      "Proton Mail": "󰇮",
+      "Proton Pass": ""
+    },
+    "format-icons": {
+      "active": "",
+      "default": "",
+      "empty": "",
+      "urgent": "",
+      "special": "󱂬"
+    },
+    "show-special": true
+  }
+}

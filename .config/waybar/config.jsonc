@@ -1,0 +1,20 @@
+{
+  "layer": "top",
+  "height": 42,
+  "spacing": 6,
+  "include": [
+    "./modules/audio.jsonc",
+    "./modules/battery.jsonc",
+    "./modules/bluetooth.jsonc",
+    "./modules/clock.jsonc",
+    "./modules/distro.jsonc",
+    "./modules/groups.jsonc",
+    "./modules/idle_inhibitor.jsonc",
+    "./modules/network.jsonc",
+    "./modules/power_profiles.jsonc",
+    "./modules/storage.jsonc",
+    "./modules/system.jsonc",
+    "./modules/workspace.jsonc",
+    "./machine-specific/$HYPR_HOST/config.jsonc"
+  ]
+}

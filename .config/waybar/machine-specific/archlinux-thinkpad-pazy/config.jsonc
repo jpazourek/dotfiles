@@ -1,0 +1,19 @@
+{
+  "output": "eDP-1",
+  "modules-left": [
+    "group/distro-group",
+    "group/storage",
+    "group/system"
+  ],
+  "modules-center": [
+    "idle_inhibitor",
+    "hyprland/workspaces",
+    "power-profiles-daemon"
+  ],
+  "modules-right": [
+    "group/audio",
+    "group/connections-laptop",
+    "battery",
+    "clock"
+  ]
+}

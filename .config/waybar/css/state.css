@@ -1,0 +1,22 @@
+#battery.charging,
+#battery.plugged,
+#power-profiles-daemon.power-saver {
+  color: #a6e3a1;
+}
+
+#cpu.warning,
+#disk.warning,
+#battery.warning:not(.charging),
+#idle_inhibitor.activated,
+#memory.warning {
+  color: #f9e2af;
+}
+
+#cpu.critical,
+#disk.critical,
+#memory.critical,
+#battery.critical:not(.charging),
+#power-profiles-daemon.performance,
+#temperature.critical {
+  color: #f38ba8;
+}
