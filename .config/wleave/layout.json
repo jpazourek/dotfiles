@@ -1,0 +1,49 @@
+{
+  "no-version-info": true,
+  "show-keybinds": true,
+  "button-aspect-ratio": "3/2",
+  "buttons": [
+    {
+      "label": "lock",
+      "action": "hyprlock",
+      "text": "Lock",
+      "keybind": "l",
+      "icon": ".local/share/icons/wleave/lock.svg"
+    },
+    {
+      "label": "hibernate",
+      "action": "systemctl hibernate",
+      "text": "Hibernate",
+      "keybind": "h",
+      "icon": ".local/share/icons/wleave/hibernate.svg"
+    },
+    {
+      "label": "logout",
+      "action": "hyprshutdown",
+      "text": "Logout",
+      "keybind": "e",
+      "icon": ".local/share/icons/wleave/logout.svg"
+    },
+    {
+      "label": "shutdown",
+      "action": "hyprshutdown -p 'systemctl poweroff'",
+      "text": "Shutdown",
+      "keybind": "s",
+      "icon": ".local/share/icons/wleave/shutdown.svg"
+    },
+    {
+      "label": "suspend",
+      "action": "hyprlock & sleep 0.5 && systemctl suspend",
+      "text": "Suspend",
+      "keybind": "u",
+      "icon": ".local/share/icons/wleave/suspend.svg"
+    },
+    {
+      "label": "reboot",
+      "action": "hyprshutdown -p 'systemctl reboot'",
+      "text": "Reboot",
+      "keybind": "r",
+      "icon": ".local/share/icons/wleave/reboot.svg"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+* {
+  opacity: 1;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+window {
+  background-color: rgba(12, 12, 12, 0.95);
+}
+
+button {
+  color: #fc88a5;
+  background-color: #1a1b26;
+  border: none;
+  padding: 10px;
+}
+
+button label.action-name {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+button label.keybind {
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #2a2b36;
+}
