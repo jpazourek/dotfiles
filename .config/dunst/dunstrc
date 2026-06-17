@@ -1,0 +1,54 @@
+[global]
+
+monitor = 2
+enable_posix_regex = true
+width = 350
+height = (10, 300)
+notification_limit = 7
+progress_bar_horizontal_alignment = left
+progress_bar_height = 8
+progress_bar_corner_radius = 4
+icon_corner_radius = 10
+separator_height = 0
+padding = 18
+horizontal_padding = 18
+frame_width = 4
+gap_size = 10
+sort = update
+idle_threshold = 1m
+font = JetBrainsMono Nerd Font 11
+show_age_threshold = 1
+enable_recursive_icon_lookup = true
+history_length = 100
+dmenu = "rofi -dmenu -p 'Notification action'"
+corner_radius = 15
+mouse_middle_click = close_all
+mouse_right_click = do_action
+
+background = "#0d0b19f0"
+foreground = "#ffffff"
+fullscreen = delay
+min_icon_size = 32
+max_icon_size = 64
+word_wrap = true
+ellipsize = end
+markup = full
+timeout = 5s
+
+[urgency_low]
+highlight = "#1e9ee6"
+frame_color = "#1e9ee6"
+format = "<span color='#1e9ee6'><b>%s</b></span>\n\n%b"
+
+[urgency_normal]
+highlight = "#be83ec"
+frame_color = "#be83ec"
+format = "<span color='#be83ec'><b>%s</b></span>\n\n%b"
+timeout = 10s
+
+[urgency_critical]
+highlight = "#fb6389"
+frame_color = "#fb6389"
+format = "<span color='#fb6389'><b>%s</b></span>\n\n%b"
+timeout = 15s
+fullscreen = show
