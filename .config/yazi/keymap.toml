@@ -1,6 +1,6 @@
 [mgr]
 prepend_keymap = [
-  { on = ["g", "s"], run = "cd /mnt/shared", desc = "Go Shared" },
+  { on = ["g", "n"], run = "cd /mnt/NAS", desc = "Go nas" },
   { on = ["g", "m"], run = "cd /run/media/$USER", desc = "Go /run/media" },
   { on = "<C-y>", run = ["yank", "plugin clipboard -- --action=copy"], desc = "Copy to system clipboard" },
   { on = "<C-p>", run = ["yank", "plugin clipboard -- --action=paste"], desc = "Paste from system clipboard" }
