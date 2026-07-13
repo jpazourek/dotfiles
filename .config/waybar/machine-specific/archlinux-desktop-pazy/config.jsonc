@@ -3,7 +3,8 @@
   "modules-left": [
     "group/distro-group",
     "group/storage",
-    "group/system"
+    "group/system",
+    "idle_inhibitor#desktop"
   ],
   "modules-center": [
     "hyprland/workspaces"

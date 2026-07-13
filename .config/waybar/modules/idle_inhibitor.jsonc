@@ -1,5 +1,14 @@
 {
-  "idle_inhibitor": {
+  "idle_inhibitor#desktop": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰛨",
+      "deactivated": "󰛩"
+    },
+    "tooltip-format-activated": "Focused Mode",
+    "tooltip-format-deactivated": "Normal Mode"
+  },
+  "idle_inhibitor#thinkpad": {
     "format": "{icon}",
     "format-icons": {
       "activated": "󰛨",

@@ -7,7 +7,8 @@
 #cpu.warning,
 #disk.warning,
 #battery.warning:not(.charging),
-#idle_inhibitor.activated,
+#idle_inhibitor.desktop.activated,
+#idle_inhibitor.thinkpad.activated,
 #memory.warning {
   color: #f9e2af;
 }

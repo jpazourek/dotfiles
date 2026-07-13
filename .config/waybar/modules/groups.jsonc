@@ -30,6 +30,13 @@
       "cpu"
     ]
   },
+  "group/inhibitor-powerprofiles": {
+    "orientation": "horizontal",
+    "modules": [
+      "idle_inhibitor#thinkpad",
+      "power-profiles-daemon"
+    ]
+  },
   "group/audio": {
     "orientation": "horizontal",
     "drawer": {

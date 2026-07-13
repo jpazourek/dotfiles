@@ -1,11 +1,11 @@
-#idle_inhibitor,
-#power-profiles-daemon,
 #battery,
 #audio,
 #connections-laptop,
 #system,
 #connections-desktop,
 #storage,
+#inhibitor-powerprofiles,
+#idle_inhibitor.desktop,
 #clock {
   margin: 4px 5px;
   background-color: #1b2023;
@@ -13,23 +13,43 @@
   color: #cac1db;
 }
 
+#idle_inhibitor.desktop {
+  padding: 6px 15px 6px 10px;
+}
+
 #audio,
 #system,
-#storage {
+#storage,
+#inhibitor-powerprofiles {
   padding: 6px 6px;
 }
 
 #disk,
 #memory,
 #cpu,
-#temperature {
-  margin-right: 2px;
+#temperature,
+#idle_inhibitor.thinkpad,
+#power-profiles-daemon {
   padding: 0 8px;
 }
 
-#idle_inhibitor,
+#disk,
+#memory,
+#cpu,
+#idle_inhibitor.thinkpad,
+#power-profiles-daemon,
+#temperature {
+  margin-right: 3px;
+}
+
+#idle_inhibitor.thinkpad {
+  margin-left: -1px;
+}
+
+#disk,
+#temperature,
 #power-profiles-daemon {
-  padding: 6px 15px 6px 10px;
+  margin-left: 2px;
 }
 
 #battery {

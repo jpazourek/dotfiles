@@ -3,12 +3,11 @@
   "modules-left": [
     "group/distro-group",
     "group/storage",
-    "group/system"
+    "group/system",
+    "group/inhibitor-powerprofiles"
   ],
   "modules-center": [
-    "idle_inhibitor",
-    "hyprland/workspaces",
-    "power-profiles-daemon"
+    "hyprland/workspaces"
   ],
   "modules-right": [
     "group/audio",
