@@ -32,5 +32,15 @@
     "format-disabled": "",
     "tooltip-format-ethernet": "󰈀  {ifname}\n󰩟  {ipaddr}\n  {netmask}",
     "on-click": "nm-connection-editor"
+  },
+  "network#tailscale": {
+    "interval": 15,
+    "interface": "tailscale*",
+    "format-ethernet": "󰖂",
+    "format-disconnected": "",
+    "format-disabled": "",
+    "format-linked": "",
+    "tooltip-format-ethernet": "󰈀  {ifname}\n󰩟  {ipaddr}\n  {netmask}",
+    "on-click": "nm-connection-editor"
   }
 }

@@ -47,6 +47,7 @@
       "network#ethernet",
       "network#wlan",
       "network#protonvpn",
+      "network#tailscale",
       "bluetooth"
     ]
   },
