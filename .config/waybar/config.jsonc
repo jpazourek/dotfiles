@@ -10,6 +10,7 @@
     "./modules/distro.jsonc",
     "./modules/groups.jsonc",
     "./modules/idle_inhibitor.jsonc",
+    "./modules/language.jsonc",
     "./modules/network.jsonc",
     "./modules/power_profiles.jsonc",
     "./modules/storage.jsonc",

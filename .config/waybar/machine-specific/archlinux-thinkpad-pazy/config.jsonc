@@ -12,6 +12,7 @@
   "modules-right": [
     "group/audio",
     "group/connections-laptop",
+    "hyprland/language",
     "battery",
     "clock"
   ]
