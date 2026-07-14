@@ -4,6 +4,7 @@
     "format-cs": "CZ",
     "format-en": "EN",
     "tooltip": true,
-    "tooltip-format": "{long}"
+    "tooltip-format": "{long}",
+    "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
   }
 }
