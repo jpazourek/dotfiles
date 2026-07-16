@@ -8,7 +8,7 @@ edit = [
   { run = "nvim %s", desc = "Neovim", for = "linux", block = true },
 ]
 play_media = [
-  { run = "mpv %s1", desc = "mpv", for = "linux", orphan = true },
+  { run = "mpv %s1 --force-window", desc = "mpv", for = "linux", orphan = true },
 ]
 open_image = [
   { run = "nsxiv %s", desc = "Gwenview", for = "linux", orphan = true },
