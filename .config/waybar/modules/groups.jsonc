@@ -63,7 +63,8 @@
     "modules": [
       "network#ethernet",
       "network#wlan",
-      "network#protonvpn"
+      "network#protonvpn",
+      "network#tailscale"
     ]
   }
 }
