@@ -9,7 +9,7 @@
 #idle_inhibitor.desktop,
 #clock {
   margin: 4px 5px;
-  background-color: #1b2023;
+  background-color: rgba(28, 32, 35, 0.9);
   border-radius: 20px;
   color: #cac1db;
 }

@@ -14,6 +14,11 @@
     "on-click": "libreoffice",
     "tooltip": false
   },
+  "custom/steam": {
+    "format": "",
+    "on-click": "steam",
+    "tooltip": false
+  },
   "custom/obsidian": {
     "format": "󰹕",
     "on-click": "obsidian",

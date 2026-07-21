@@ -1,7 +1,7 @@
 {
   "output": "eDP-1",
   "modules-left": [
-    "group/distro-group",
+    "group/distro-group-thinkpad",
     "group/storage",
     "group/system",
     "group/inhibitor-powerprofiles"

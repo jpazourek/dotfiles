@@ -1,6 +1,7 @@
-#distro-group {
+#distro-group-desktop,
+#distro-group-thinkpa {
   margin: 4px 5px;
-  background-color: #1b2023;
+  background-color: rgba(28, 32, 35, 0.9);
   border-radius: 20px;
   color: #cfbdfe;
 }
@@ -20,8 +21,8 @@
   padding: 0px 10px;
 }
 
-#custom-obsidian {
-  color: #cba6f7;
+#custom-steam {
+  color: #126797;
   padding: 0px 10px;
 }
 
@@ -42,5 +43,10 @@
 
 #custom-protonpass {
   color: #aa6fd5;
+  padding: 0px 10px;
+}
+
+#custom-obsidian {
+  color: #cba6f7;
   padding: 0px 20px 0px 10px;
 }

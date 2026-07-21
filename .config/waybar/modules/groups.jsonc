@@ -1,5 +1,5 @@
 {
-  "group/distro-group": {
+  "group/distro-group-desktop": {
     "orientation": "horizontal",
     "drawer": {
       "transition-duration": 650,
@@ -8,12 +8,28 @@
     "modules": [
       "custom/distro",
       "custom/terminal",
-      "custom/libreoffice",
-      "custom/obsidian",
       "custom/files",
       "custom/browser",
+      "custom/libreoffice",
+      "custom/steam",
       "custom/protonmail",
-      "custom/protonpass"
+      "custom/protonpass",
+      "custom/obsidian"
+    ]
+  },
+  "group/distro-group-thinkpad": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 650,
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "custom/distro",
+      "custom/terminal",
+      "custom/files",
+      "custom/browser",
+      "custom/libreoffice",
+      "custom/obsidian"
     ]
   },
   "group/storage": {
