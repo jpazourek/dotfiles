@@ -1,0 +1,47 @@
+#!/bin/bash
+
+set -euo pipefail
+
+BAT=$(ls /sys/class/power_supply/ | grep -E '^BAT[0-9]+$' | head -n 1)
+
+if [ -z "$BAT" ]; then
+  echo ""
+  exit 0
+fi
+
+PERCENT=$(cat "/sys/class/power_supply/$BAT/capacity")
+STATUS=$(cat "/sys/class/power_supply/$BAT/status")
+
+if [ "$STATUS" = "Charging" ]; then
+  echo "󱐌  $PERCENT%"
+elif [ "$STATUS" = "Discharging" ]; then
+  if [ "$PERCENT" -le 8 ]; then
+    echo "󰂎  $PERCENT%"
+  elif [ "$PERCENT" -le 17 ]; then
+    echo "󰁺  $PERCENT%"
+  elif [ "$PERCENT" -le 26 ]; then
+    echo "󰁻  $PERCENT%"
+  elif [ "$PERCENT" -le 35 ]; then
+    echo "󰁼  $PERCENT%"
+  elif [ "$PERCENT" -le 44 ]; then
+    echo "󰁽  $PERCENT%"
+  elif [ "$PERCENT" -le 53 ]; then
+    echo "󰁾  $PERCENT%"
+  elif [ "$PERCENT" -le 62 ]; then
+    echo "󰁿  $PERCENT%"
+  elif [ "$PERCENT" -le 71 ]; then
+    echo "󰂀  $PERCENT%"
+  elif [ "$PERCENT" -le 80 ]; then
+    echo "󰂁  $PERCENT%"
+  elif [ "$PERCENT" -le 89 ]; then
+    echo "󰂂  $PERCENT%"
+  else
+    echo "󰁹  $PERCENT%"
+  fi
+elif [ "$STATUS" = "Not charging" ]; then
+  echo "  $PERCENT%"
+elif [ "$STATUS" = "Full" ]; then
+  echo "󰁹  $PERCENT%"
+else
+  echo "status not known -- $PERCENT%"
+fi
