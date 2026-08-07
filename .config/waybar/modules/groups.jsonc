@@ -12,8 +12,7 @@
       "custom/browser",
       "custom/libreoffice",
       "custom/steam",
-      "custom/protonmail",
-      "custom/protonpass",
+      "custom/dbeaver",
       "custom/obsidian"
     ]
   },
@@ -29,6 +28,7 @@
       "custom/files",
       "custom/browser",
       "custom/libreoffice",
+      "custom/dbeaver",
       "custom/obsidian"
     ]
   },

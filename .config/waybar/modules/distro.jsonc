@@ -34,14 +34,9 @@
     "on-click": "firefox",
     "tooltip": false
   },
-  "custom/protonmail": {
-    "format": "󰇮",
-    "on-click": "proton-mail",
-    "tooltip": false
-  },
-  "custom/protonpass": {
-    "format": "",
-    "on-click": "proton-pass",
+  "custom/dbeaver": {
+    "format": "",
+    "on-click": "dbeaver",
     "tooltip": false
   }
 }
